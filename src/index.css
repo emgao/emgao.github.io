@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  font-family: roboto;
+  background-color:#eae7dc;
+  color:#474b4f;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {color:inherit;}
+h1{font-size:5em;}
+p{font-size:1em;}
+.header a {text-decoration:none;}
+.header{
+  width:100%;
+  display:flex;
+  align-items:center;
+  font-weight:bolder;
+}
+.header-name{
+  flex-grow:3;
+  font-size:2.5em;
+  color:#e85a4f !important;
+  text-decoration:none !important;
+}
+.header-item{
+  flex-grow:1;
+  font-size:1em;
+  color:#e85a4f !important;
+  text-decoration:none !important;
+}
+.homepage-content {
+  display:flex;
+  width: 100%;
+  align-items:center;
+}
+img {
+  width:90%;
+  padding:0 5% 0 5%;   
+}
+.contact-widgets {
+  display:flex;
+  flex-flow:row;
+}
+.page-content {
+  align-items:left;
+}
+.contact-widgets img {width:2em;}
+.widget { padding: .5em .5em .5em 0px}
+@media screen and (max-width: 767px) {
+  .header, .page-content {
+      padding: 2.5% 0 2.5% 5%;
+  }
+  .homepage-content {
+      flex-direction:column;
+  }
+  .bio-image {
+      width:100%;
+  }
+  .bio-textbox {
+      width:90%;
+      padding:0 2.5% 0 2.5%;
+  }
+}   
+@media screen and (min-width: 768px) {
+  .header {
+      padding: 2.5% 0 2.5% 2.5%;
+  }
+  .page-content {
+    padding: 0 10% 0 10%;
+  }
+  .homepage-content {
+      flex-direction:row;
+  }  
+  .bio-image {
+      width:50%;
+  }
+  .bio-textbox {
+      width:50%;
+      padding:0 5% 0 5%;
+  }
 }
